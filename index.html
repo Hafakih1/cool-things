@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hussein Fakih</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="./assets/css/style.css"/>
 </head>
 <body>
 <!-- NavBar Section-->
     <nav>
-        <h2 class="logo">Portfo<span>lio</span></h2>
+        <h2 class="logo">Calcu<span>lator</span></h2>
         <ul>
             <li><a href="#home">          Home        </a></li>
             <li><a href="#calc">         calc       </a></li>
@@ -22,22 +22,18 @@
     </nav>
 
  <!--Hero Section-->
-    <section class="hero" id="home">
-        <div class="content">
-            <h4>Hello, my name is</h4>
-            <h1>Hussein<span>Fakih</span> </h1>
-            <h3>I am a Computer Engineer</h3>
-            <div class="newslatter">
-                <form>
-                    <input type="email"  name="email"  id="mail" placeholder="Please email husseinafakih@hotmail.com">
-                    <input type="submit" name="submit" value="Lets Start">
-                </form>
+    <div class="container">
+        <div class="face">
+            <div class ="eyes">
+                <div class="eye"></div>
+                <div class="eye"></div>
             </div>
         </div>
-    </section>
-
+    </div>
+    <script src="./assets/js/face.js"></script>
 
     <!-- Hour Section-->
+
     <div class="clock">
         <div class="hour">
             <div class="hr" id="hr"></div>
@@ -55,6 +51,7 @@
 
  
 <!-- Calculator section-->
+
 <section class="calc">
     <form class="calculator" name="calc">
         <input class="value" type="text" name="txt" readonly="">
@@ -77,6 +74,9 @@
         <span class="num" onclick="document.calc.txt.value += '.' "> . </span>
         <span class="num equal" onclick="document.calc.txt.value = eval(calc.txt.value) "> = </span>
     </form>
+</section>
+
+    <!-- Faces section-->
 
 </body>
 </html>
